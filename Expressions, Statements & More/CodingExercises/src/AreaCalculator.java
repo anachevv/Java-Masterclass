@@ -1,6 +1,7 @@
 public class AreaCalculator {
     public static void main(String[] args) {
         System.out.println(area(3));
+        System.out.println(area(3, 5));
     }
     public static double area(double radius) {
         if (radius < 0) {
