@@ -29,6 +29,12 @@ public class NumberOfDaysInMonth {
         switch (month) {
 
             case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
                 result = 31;
                 break;
             case 2:
@@ -38,35 +44,11 @@ public class NumberOfDaysInMonth {
                     result = 28;
                 }
                 break;
-            case 3:
-                result = 31;
-                break;
             case 4:
-                result = 30;
-                break;
-            case 5:
-                result = 31;
-                break;
             case 6:
-                result = 30;
-                break;
-            case 7:
-                result = 31;
-                break;
-            case 8:
-                result = 31;
-                break;
             case 9:
-                result = 30;
-                break;
-            case 10:
-                result = 31;
-                break;
             case 11:
                 result = 30;
-                break;
-            case 12:
-                result = 31;
                 break;
         }
         return result;
