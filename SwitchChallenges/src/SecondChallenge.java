@@ -1,20 +1,17 @@
 public class SecondChallenge {
     public static void main(String[] args) {
-        System.out.println(printDayOfWeek(7));
+        System.out.println(printDayOfWeek(1));
     }
     public static String printDayOfWeek(int userInput) {
-        String message = "";
-
-        switch (userInput) {
-            case 0 -> message = "Sunday";
-            case 1 -> message = "Monday";
-            case 2 -> message = "Tuesday";
-            case 3 -> message = "Wednesday";
-            case 4 -> message = "Thursday";
-            case 5 -> message = "Friday";
-            case 6 -> message = "Saturday";
-            default -> message = "Invalid Day";
-        }
-        return message;
+        return switch (userInput) {
+            case 0 -> {yield "Sunday";}
+            case 1 -> {yield "Monday";}
+            case 2 -> {yield "Tuesday";}
+            case 3 -> {yield "Wednesday";}
+            case 4 -> {yield "Thursday";}
+            case 5 -> {yield "Friday";}
+            case 6 -> {yield "Saturday";}
+            default -> {yield "Invalid Day";}
+        };
     }
 }
